@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>NeuraCare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>🩺Triagem Médica Inteligente</h1>
+    <form action="/gerar" method="POST">
+      <input name="nome" placeholder="Nome do paciente" required>
+      <input id="cpf" name="CPF" placeholder="CPF do paciente" maxlength="14" required>
+      <input name="pressao" placeholder="Pressão arterial (ex: 120/80)" required>
+      <input name="frequencia" placeholder="Frequência cardíaca (bpm)" required>
+      <input name="temperatura" placeholder="Temperatura (°C)" required>
+      <input name="saturacao" placeholder="Saturação de oxigênio (%)" required>
+      <input name="idade" placeholder="Idade" required>
+      <select name="sexo" required>
+        <option value="">Selecione o sexo</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+      </select>
+      <input name="doencas" placeholder="Doenças crônicas">
+      <input name="alergias" placeholder="Alergias conhecidas">
+      <input name="tipo" placeholder="Tipo sanguíneo">
+      <input name="medicamentos" placeholder="Medicamentos contínuos">
+      <textarea name="sintomas" placeholder="Descreva os sintomas..." required></textarea>
+      <button type="submit">Gerar Relatório</button>
+    </form>
+  </div>
+
+  <script src="cpf-mask.js"></script>
+</body>
+</html>

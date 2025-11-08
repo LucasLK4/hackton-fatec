@@ -1,0 +1,133 @@
+/* === Layout geral === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+  color: #333;
+}
+
+/* container geral */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* === Cartões === */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+/* título principal */
+h1 {
+  text-align: center;
+  color: #0078ff;
+  margin-bottom: 20px;
+}
+
+/* === Formulário === */
+input, select, textarea, button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  background: #0078ff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #005fd1;
+}
+
+/* === Página de resultado === */
+.resultado-card {
+  width: 90%;
+  max-width: 800px;
+  background: #ffffff;
+  border-left: 6px solid #0078ff;
+  overflow-y: auto;
+  max-height: 90vh;
+  padding: 30px;
+}
+
+.texto-resultado {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.texto-resultado h2 {
+  color: #0078ff;
+  margin-top: 20px;
+}
+
+.botao-voltar {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #0078ff;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botao-voltar:hover {
+  text-decoration: underline;
+}
+
+/* === Markdown formatado === */
+.texto-resultado h2 {
+  margin-top: 20px;
+  color: #0078ff;
+}
+
+.texto-resultado ul, .texto-resultado ol {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.texto-resultado li {
+  margin: 5px 0;
+}
+
+.texto-resultado strong {
+  color: #222;
+}
+
+.texto-resultado em {
+  color: #555;
+  font-style: italic;
+}
+
+.texto-resultado p {
+  margin: 8px 0;
+}
